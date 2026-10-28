@@ -39,26 +39,18 @@ pytest -q
 Once a registry source has both explicit license approval and a retrievable data
 file, collect a bounded sample before scaling:
 
-```python
-from src.collection.dataset_loader import collect_huggingface_dataset
-from src.collection.source_registry import load_sources
-
-sources = load_sources("configs/sources.json")
-collect_huggingface_dataset(
-		sources["<approved-source-id>"],
-		"data/raw",
-		max_records=25,
-)
+```powershell
+python -m scripts.collect_huggingface <approved-source-id> --limit 25
 ```
+
+The command refuses sources without explicit license approval. The current
+`walelign_amharic_sti_qa` entry is blocked because its repository had no data
+files; it must not be used until the source is verified again.
 
 Process a collected JSONL file:
 
-```python
-import json
-from src.preprocessing.pipeline import process_jsonl
-
-config = json.load(open("configs/normalization.json", encoding="utf-8"))
-process_jsonl("data/raw/source.jsonl", "data/processed/source.jsonl", config)
+```powershell
+python -m scripts.process_dataset data/raw/source.jsonl data/processed/source.jsonl
 ```
 
 Train a custom tokenizer only after real processed text exists. Do not substitute
