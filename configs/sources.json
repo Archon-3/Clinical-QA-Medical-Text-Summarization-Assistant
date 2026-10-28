@@ -1,0 +1,67 @@
+[
+  {
+    "id": "walelign_amharic_sti_qa",
+    "name": "Amharic STI QA Dataset",
+    "source_type": "huggingface",
+    "source_identifier": "Walelign/Amharic_STI_QA_Dataset",
+    "source_url": "https://huggingface.co/datasets/Walelign/Amharic_STI_QA_Dataset",
+    "language": "am",
+    "document_type": "medical_question_answer",
+    "license": "CC-BY-NC-4.0",
+    "license_evidence": "Hugging Face dataset API license tag verified during Phase 1",
+    "approval": "blocked_empty_repository",
+    "collection_method": "huggingface_datasets"
+  },
+  {
+    "id": "ethionlp_amharic_instruction",
+    "name": "EthioNLP Amharic Instruction Dataset",
+    "source_type": "huggingface",
+    "source_identifier": "EthioNLP/Amharic_Instruction_dataset",
+    "source_url": "https://huggingface.co/datasets/EthioNLP/Amharic_Instruction_dataset",
+    "language": "am",
+    "document_type": "instruction_text",
+    "license": null,
+    "license_evidence": "No license tag observed in Phase 1 API response",
+    "approval": "hold_license_review",
+    "collection_method": "huggingface_datasets"
+  },
+  {
+    "id": "xlsum_amharic_summarization",
+    "name": "XL-Sum Amharic Summarization Dataset",
+    "source_type": "huggingface",
+    "source_identifier": "rasyosef/xlsum_amharic_summarization",
+    "source_url": "https://huggingface.co/datasets/rasyosef/xlsum_amharic_summarization",
+    "language": "am",
+    "document_type": "summarization",
+    "license": null,
+    "license_evidence": "Dataset is discoverable; license requires dataset-card review",
+    "approval": "hold_license_review",
+    "collection_method": "huggingface_datasets"
+  },
+  {
+    "id": "who_ethiopia_publications",
+    "name": "WHO Ethiopia Publications",
+    "source_type": "web",
+    "source_identifier": "who_ethiopia_publications",
+    "source_url": "https://www.who.int/ethiopia/publications",
+    "language": "am",
+    "document_type": "official_health_publication",
+    "license": null,
+    "license_evidence": "Publication-specific terms must be reviewed before collection",
+    "approval": "hold_page_and_license_review",
+    "collection_method": "robots_aware_web_scraper"
+  },
+  {
+    "id": "ethiopian_ministry_of_health",
+    "name": "Ethiopian Ministry of Health",
+    "source_type": "web",
+    "source_identifier": "ethiopian_ministry_of_health",
+    "source_url": "https://www.moh.gov.et/",
+    "language": "am",
+    "document_type": "official_health_advisory",
+    "license": null,
+    "license_evidence": "Page-specific reuse terms must be reviewed before collection",
+    "approval": "hold_page_and_license_review",
+    "collection_method": "robots_aware_web_scraper"
+  }
+]
